@@ -12,8 +12,6 @@ return {
 				null_ls.builtins.formatting.stylua,
 				-- for formatting javascript
 				null_ls.builtins.formatting.prettier,
-				-- for linting javascript
-				require("none-ls.diagnostics.eslint_d"),
 			},
 		})
 
