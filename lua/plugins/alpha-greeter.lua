@@ -12,32 +12,32 @@ local function configure()
 	dashboard.section.header.val = {
 		{
 			type = "text",
-			val = "   ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
+			val = "      ██╗██╗   ██╗███████╗████████╗    ███╗   ███╗ █████╗ ██╗  ██╗███████╗    ██╗████████╗ ",
 			opts = { hl = "NeovimDashboardLogo1", shrink_margin = false, position = "center" },
 		},
 		{
 			type = "text",
-			val = "   ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
+			val = "      ██║██║   ██║██╔════╝╚══██╔══╝    ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝    ██║╚══██╔══╝ ",
 			opts = { hl = "NeovimDashboardLogo2", shrink_margin = false, position = "center" },
 		},
 		{
 			type = "text",
-			val = "   ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
+			val = "      ██║██║   ██║███████╗   ██║       ██╔████╔██║███████║█████╔╝ █████╗      ██║   ██║    ",
 			opts = { hl = "NeovimDashboardLogo3", shrink_margin = false, position = "center" },
 		},
 		{
 			type = "text",
-			val = "   ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
+			val = " ██   ██║██║   ██║╚════██║   ██║       ██║╚██╔╝██║██╔══██║██╔═██╗ ██╔══╝      ██║   ██║    ",
 			opts = { hl = "NeovimDashboardLogo4", shrink_margin = false, position = "center" },
 		},
 		{
 			type = "text",
-			val = "   ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
+			val = " ╚█████╔╝╚██████╔╝███████║   ██║       ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗    ██║   ██║    ",
 			opts = { hl = "NeovimDashboardLogo5", shrink_margin = false, position = "center" },
 		},
 		{
 			type = "text",
-			val = "   ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
+			val = "  ╚════╝  ╚═════╝ ╚══════╝   ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝   ╚═╝    ",
 			opts = { hl = "NeovimDashboardLogo6", shrink_margin = false, position = "center" },
 		},
 	}
