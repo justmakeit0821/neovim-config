@@ -12,6 +12,11 @@ local function configure()
 	dashboard.section.header.val = {
 		{
 			type = "text",
+			val = "                                                                                           ",
+			opts = { shrink_margin = false, position = "center" },
+		},
+		{
+			type = "text",
 			val = "      ██╗██╗   ██╗███████╗████████╗    ███╗   ███╗ █████╗ ██╗  ██╗███████╗    ██╗████████╗ ",
 			opts = { hl = "NeovimDashboardLogo1", shrink_margin = false, position = "center" },
 		},
@@ -40,6 +45,11 @@ local function configure()
 			val = "  ╚════╝  ╚═════╝ ╚══════╝   ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝   ╚═╝    ",
 			opts = { hl = "NeovimDashboardLogo6", shrink_margin = false, position = "center" },
 		},
+		{
+			type = "text",
+			val = "                                                                                           ",
+			opts = { shrink_margin = false, position = "center" },
+		},
 	}
 
 	dashboard.section.buttons.val = {
@@ -52,6 +62,35 @@ local function configure()
 		dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
 		dashboard.button("l", "󰒲 " .. " Lazy", ":Lazy<CR>"),
 		dashboard.button("q", " " .. " Quit", ":qa<CR>"),
+	}
+
+	dashboard.section.footer.type = "group"
+	dashboard.section.footer.val = {
+		{
+			type = "text",
+			val = " ",
+			opts = { shrink_margin = false, position = "center" },
+		},
+		{
+			type = "text",
+			val = " ",
+			opts = { shrink_margin = false, position = "center" },
+		},
+		{
+			type = "text",
+			val = "It is in the process of trying and exploring that",
+			opts = { shrink_margin = false, position = "center" },
+		},
+		{
+			type = "text",
+			val = "you find joy and grow; the focus should not be on",
+			opts = { shrink_margin = false, position = "center" },
+		},
+		{
+			type = "text",
+			val = "the goal, but on the process itself.",
+			opts = { shrink_margin = false, position = "center" },
+		},
 	}
 
 	return dashboard.config
