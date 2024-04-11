@@ -53,11 +53,11 @@ local function configure()
 	}
 
 	dashboard.section.buttons.val = {
-		dashboard.button("n", " " .. " New file", ":ene <BAR> startinsert <CR>"),
-		dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
-		dashboard.button("t", "󰷾 " .. " Find text", ":Telescope live_grep <CR>"),
-		dashboard.button("b", " " .. " File browser", ":Neotree filesystem reveal left toggle<CR>"),
-		dashboard.button("r", "󰄉 " .. " Recent files", ":Telescope oldfiles <CR>"),
+		dashboard.button("n", " " .. " New File", ":ene <BAR> startinsert <CR>"),
+		dashboard.button("f", " " .. " Find File", ":Telescope find_files <CR>"),
+		dashboard.button("t", "󰷾 " .. " Find Text", ":Telescope live_grep <CR>"),
+		dashboard.button("b", " " .. " File Explorer", ":Neotree filesystem reveal left toggle<CR>"),
+		dashboard.button("r", "󰄉 " .. " Recent Files", ":Telescope oldfiles <CR>"),
 		dashboard.button("g", " " .. " Git", ":LazyGit<CR>"),
 		dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
 		dashboard.button("l", "󰒲 " .. " Lazy", ":Lazy<CR>"),
