@@ -1,12 +1,12 @@
 local function configure()
 	local dashboard = require("alpha.themes.dashboard")
 
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo1", { fg = "#DA4939" })
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo2", { fg = "#FF875F" })
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo3", { fg = "#FFC66D" })
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo4", { fg = "#00FF03" })
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo5", { fg = "#00AFFF" })
-	vim.api.nvim_set_hl(0, "NeovimDashboardLogo6", { fg = "#8800FF" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo1", { fg = "#EA6962" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo2", { fg = "#E78A4E" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo3", { fg = "#D8A657" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo4", { fg = "#A9B665" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo5", { fg = "#7DAEA3" })
+	vim.api.nvim_set_hl(0, "NeovimDashboardLogo6", { fg = "#D3869B" })
 
 	dashboard.section.header.type = "group"
 	dashboard.section.header.val = {
