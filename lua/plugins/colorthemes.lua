@@ -30,8 +30,15 @@ return {
                 transparent_mode = false,
             })
         end,
-        opts = {}
-    }, {
+        opts = {},
+    },
+    {
+        "sainnhe/gruvbox-material",
+        config = function()
+            vim.cmd([[set termguicolors]])
+        end,
+    },
+    {
         "catppuccin/nvim",
         name = "catppuccin",
         lazy = false,
@@ -39,6 +46,6 @@ return {
         config = function()
             -- actually set the color scheme to catppuccin
             -- vim.cmd.colorscheme "catppuccin"
-        end
-    } 
+        end,
+    },
 }
