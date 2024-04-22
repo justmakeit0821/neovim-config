@@ -1,6 +1,7 @@
 return {
 	{
 		"ellisonleao/gruvbox.nvim",
+        priority = 1000,
 		name = "gruvbox",
 		config = function()
 			-- default options:
@@ -33,12 +34,14 @@ return {
 	},
 	{
 		"sainnhe/gruvbox-material",
+        priority = 1000,
 		config = function()
 			vim.cmd([[set termguicolors]])
 		end,
 	},
 	{
 		"catppuccin/nvim",
+        priority = 1000,
 		name = "catppuccin",
 		lazy = false,
 		config = function()
@@ -48,7 +51,14 @@ return {
 	},
 	{
 		"folke/tokyonight.nvim",
+        priority = 1000,
 		lazy = false,
+		opts = {},
+	},
+	{
+		"craftzdog/solarized-osaka.nvim",
+		lazy = false,
+		priority = 1000,
 		opts = {},
 	},
 }
