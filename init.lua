@@ -18,6 +18,9 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
+-- set up LSP
+require("lsp-config")
+
 -- color theme
 vim.o.background = "dark" -- or "light"
 vim.g.gruvbox_material_background = "hard"
