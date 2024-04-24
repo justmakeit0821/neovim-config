@@ -45,11 +45,10 @@ cmp.setup({
         { name = "nvim_lsp" },
     },
     mapping = cmp.mapping.preset.insert({
-        -- Enter key confirms completion item
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
-
-        -- Ctrl + Space triggers completion menu
+        -- Ctrl + Space to invoke completion menu
         ["<C-Space>"] = cmp.mapping.complete(),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-e>"] = cmp.mapping.abort(),
     }),
     snippet = {
         expand = function(args)
@@ -58,6 +57,5 @@ cmp.setup({
     },
     window = {
         completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
     }
 })
