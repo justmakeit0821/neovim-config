@@ -41,9 +41,6 @@ require("mason-lspconfig").setup({
 local cmp = require("cmp")
 
 cmp.setup({
-    sources = {
-        { name = "nvim_lsp" },
-    },
     mapping = cmp.mapping.preset.insert({
         -- Ctrl + Space to invoke completion menu
         ["<C-Space>"] = cmp.mapping.complete(),
@@ -57,5 +54,15 @@ cmp.setup({
     },
     window = {
         completion = cmp.config.window.bordered(),
-    }
+    },
+    sources = cmp.config.sources({
+        { name = "nvim_lsp" },
+        { name = "cmp-dbee" },
+        { name = "vsnip" }, -- For vsnip users.
+        { name = "luasnip" }, -- For luasnip users.
+        -- { name = 'ultisnips' }, -- For ultisnips users.
+        -- { name = 'snippy' }, -- For snippy users.
+    }, {
+        { name = "buffer" },
+    }),
 })
