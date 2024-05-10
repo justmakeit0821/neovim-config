@@ -43,4 +43,12 @@ return {
             vim.api.nvim_set_keymap("n", "<C-e>", "<Cmd>Telescope scope buffers<CR>", { noremap = true, silent = true })
         end,
     },
+    {
+        "Bekaboo/dropbar.nvim",
+        -- optional, but required for fuzzy finder support
+        dependencies = {
+            "nvim-telescope/telescope-fzf-native.nvim",
+        },
+        opts = {},
+    },
 }
