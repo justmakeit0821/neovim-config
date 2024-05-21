@@ -12,3 +12,13 @@ vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
 
 -- break clipboard silo between Neovim and outside Neovim
 vim.cmd("set clipboard+=unnamedplus")
+
+-- custom filetype mappings
+vim.filetype.add({
+    filename = {
+        ["jenkinsfile.txt"] = "groovy"
+    },
+    pattern = {
+        [".*.yml.vpp"] = "yaml"
+    }
+})
