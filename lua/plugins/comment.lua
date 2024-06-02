@@ -1,8 +1,11 @@
 return {
-	"numToStr/Comment.nvim",
-	lazy = false,
-	config = function()
-		-- call setup() to create the default mappings, e.g., "gcc" to comment a line
-		require("Comment").setup()
-	end,
+    {
+        "folke/ts-comments.nvim",
+        opts = {},
+        event = "VeryLazy",
+        enabled = vim.fn.has("nvim-0.10.0") == 1,
+        config = function()
+            require("ts-comments").setup()
+        end
+    }
 }
