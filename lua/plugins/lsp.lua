@@ -1,4 +1,5 @@
 return {
+    { "nvim-java/nvim-java" },
     { "neovim/nvim-lspconfig" },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
