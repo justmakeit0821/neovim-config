@@ -1,18 +1,21 @@
 return {
     {
         "CopilotC-Nvim/CopilotChat.nvim",
-        branch = "canary",
+        branch = "main",
         dependencies = {
             {
                 "zbirenbaum/copilot.lua",
                 config = function()
-                    require("copilot").setup({})
+                    require("copilot").setup({
+                        copilot_model = "gpt-4o-2024-11-20",
+                    })
                 end,
             },
             { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
         },
+        build = "make tiktoken",
         opts = {
-            debug = true,
+            debug = false,
         },
         keys = {
             {
