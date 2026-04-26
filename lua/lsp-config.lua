@@ -70,6 +70,3 @@ cmp.setup({
         { name = "buffer" },
     }),
 })
-
-
--- require("java").setup()
